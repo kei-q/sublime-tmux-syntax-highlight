@@ -3,7 +3,7 @@
   "fileTypes": [".tmux.conf"],
   "patterns": [
     {
-      "match": "\\d+",
+      "match": "(\\+|\\-)?\\d+",
       "name": "constant.numeric.tmux"
     },
     {
