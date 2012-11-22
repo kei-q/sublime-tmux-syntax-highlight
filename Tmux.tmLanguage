@@ -30,13 +30,46 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.tmux</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>'</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.tmux</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.single.tmux</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.tmux</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>"</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.lua</string>
+					<string>punctuation.definition.string.begin.tmux</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -46,18 +79,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.lua</string>
+					<string>punctuation.definition.string.end.tmux</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.double.lua</string>
+			<string>string.quoted.double.tmux</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\.</string>
 					<key>name</key>
-					<string>constant.character.escape.lua</string>
+					<string>constant.character.escape.tmux</string>
 				</dict>
 			</array>
 		</dict>

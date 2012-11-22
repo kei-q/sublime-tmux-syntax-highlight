@@ -16,6 +16,23 @@
       "name": "constant.language.tmux"
     },
     {
+      "begin": "'",
+      "beginCaptures": {
+        "0": {"name": "punctuation.definition.string.begin.tmux"}
+      },
+      "end": "'",
+      "endCaptures": {
+        "0": {"name": "punctuation.definition.string.end.tmux"}
+      },
+      "name": "string.quoted.single.tmux",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.tmux"
+        }
+      ]
+    },
+    {
       "begin": "\"",
       "beginCaptures": {
         "0": {"name": "punctuation.definition.string.begin.tmux"}
