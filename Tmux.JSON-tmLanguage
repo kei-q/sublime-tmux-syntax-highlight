@@ -1,4 +1,5 @@
-{ "name": "Tmux",
+{
+  "name": "Tmux",
   "scopeName": "source.tmux",
   "fileTypes": [".tmux.conf"],
   "patterns": [
@@ -13,6 +14,23 @@
     {
       "match": "\\b(on|off)\\b",
       "name": "constant.language.tmux"
+    },
+    {
+      "begin": "\"",
+      "beginCaptures": {
+        "0": {"name": "punctuation.definition.string.begin.tmux"}
+      },
+      "end": "\"",
+      "endCaptures": {
+        "0": {"name": "punctuation.definition.string.end.tmux"}
+      },
+      "name": "string.quoted.double.tmux",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.tmux"
+        }
+      ]
     },
     {
       "match": "(#).*$\\n?",
