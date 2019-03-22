@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>.tmux.conf</string>
+		<string>tmux.conf</string>
 	</array>
 	<key>name</key>
 	<string>Tmux</string>
